@@ -1,4 +1,4 @@
-//I will be honest and admit that i gave up at a point
+//I feel not equipped to successfully alter 
 
 import java.io.File; 
 import java.util.*;
@@ -150,7 +150,10 @@ public static void lex() {
 			/* EOF */
 		case EOF:
 			 nextToken = EOF;
-			 lexeme ="EOF";
+			 lexeme[0] = 'E';
+			 lexeme[1] = 'O';
+			 lexeme[2] = 'F';
+			 lexeme[3] = 0;
 		 	break;
 	 } /* End of switch */
 	 System.out.println("Next token is: " + nextToken +  ", Next lexeme is "+ lexeme +"\n");
